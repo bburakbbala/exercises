@@ -1,0 +1,88 @@
+FUNCTION_BLOCK ChildSugarConsumption
+
+VAR_INPUT
+	addedSugarConsumption : REAL;
+	gender : REAL;
+	age : REAL;
+END_VAR
+
+VAR_OUTPUT
+	effectOnMood : REAL;
+END_VAR
+
+FUZZIFY addedSugarConsumption
+	TERM tooLittle := (0,1)(15,0);
+	TERM little := (0,0)(15,1)(19,0);
+	TERM medium := (15,0)(20,1)(24,0);
+	TERM much := (20,0)(25,1)(30,0);
+	TERM tooMuch := (25,0)(30,1)(50,0);
+	TERM excessive := (30,0)(50,1)(100,1)(180,1);
+END_FUZZIFY
+
+FUZZIFY gender
+	TERM female := 1;
+	TERM male := 2;
+END_FUZZIFY
+
+FUZZIFY age
+	TERM fourToSix := (4,1)(4,1)(6,1)(7,0);
+	TERM sevenToTen := (6,0)(7,1)(10,1)(11,0);
+	TERM elevenToEighteen := (10,0)(11,1)(18,1)(18,1);
+END_FUZZIFY
+
+DEFUZZIFY effectOnMood
+	TERM tooLittle := (0,0)(15,1)(20,0);
+	TERM little := (15,0)(20,1)(30,0);
+	TERM medium := (20,0)(30,1)(40,1)(60,0);
+	TERM much := (40,0)(60,1)(90,0);
+	TERM tooMuch := (60,0)(90,1)(100,1)(100,1); 
+	METHOD : COG;
+	DEFAULT := 0;
+END_DEFUZZIFY
+
+RULEBLOCK ruleBlock1
+	AND : MIN;
+	ACT : MIN;
+	ACCU : MAX;
+	
+	RULE 1: IF addedSugarConsumption IS tooLittle AND gender IS female AND age IS fourToSix THEN effectOnMood IS little;
+	RULE 2: IF addedSugarConsumption IS tooLittle AND gender IS female AND age IS sevenToTen THEN effectOnMood IS little;
+	RULE 3: IF addedSugarConsumption IS tooLittle AND gender IS female AND age IS elevenToEighteen THEN effectOnMood IS tooLittle;
+	RULE 4: IF addedSugarConsumption IS tooLittle AND gender IS male AND age IS fourToSix THEN effectOnMood IS little;
+	RULE 5: IF addedSugarConsumption IS tooLittle AND gender IS male AND age IS sevenToTen THEN effectOnMood IS tooLittle;
+	RULE 6: IF addedSugarConsumption IS tooLittle AND gender IS male AND age IS elevenToEighteen THEN effectOnMood IS tooLittle;
+	RULE 7: IF addedSugarConsumption IS little AND gender IS female AND age IS fourToSix THEN effectOnMood IS little;
+	RULE 8: IF addedSugarConsumption IS little AND gender IS female AND age IS sevenToTen THEN effectOnMood IS little;
+	RULE 9: IF addedSugarConsumption IS little AND gender IS female AND age IS elevenToEighteen THEN effectOnMood IS little;
+	RULE 10: IF addedSugarConsumption IS little AND gender IS male AND age IS fourToSix THEN effectOnMood IS little;
+	RULE 11: IF addedSugarConsumption IS little AND gender IS male AND age IS sevenToTen THEN effectOnMood IS little;
+	RULE 12: IF addedSugarConsumption IS little AND gender IS male AND age IS elevenToEighteen THEN effectOnMood IS tooLittle;
+	RULE 13: IF addedSugarConsumption IS medium AND gender IS female AND age IS fourToSix THEN effectOnMood IS medium;
+	RULE 14: IF addedSugarConsumption IS medium AND gender IS female AND age IS sevenToTen THEN effectOnMood IS little;
+	RULE 15: IF addedSugarConsumption IS medium AND gender IS female AND age IS elevenToEighteen THEN effectOnMood IS little;
+	RULE 16: IF addedSugarConsumption IS medium AND gender IS male AND age IS fourToSix THEN effectOnMood IS little;
+	RULE 17: IF addedSugarConsumption IS medium AND gender IS male AND age IS sevenToTen THEN effectOnMood IS little;
+	RULE 18: IF addedSugarConsumption IS medium AND gender IS male AND age IS elevenToEighteen THEN effectOnMood IS little;
+	RULE 19: IF addedSugarConsumption IS much AND gender IS female AND age IS fourToSix THEN effectOnMood IS medium;
+	RULE 20: IF addedSugarConsumption IS much AND gender IS female AND age IS sevenToTen THEN effectOnMood IS medium;
+	RULE 21: IF addedSugarConsumption IS much AND gender IS female AND age IS elevenToEighteen THEN effectOnMood IS medium;
+	RULE 22: IF addedSugarConsumption IS much AND gender IS male AND age IS fourToSix THEN effectOnMood IS medium;
+	RULE 23: IF addedSugarConsumption IS much AND gender IS male AND age IS sevenToTen THEN effectOnMood IS little;
+	RULE 24: IF addedSugarConsumption IS much AND gender IS male AND age IS elevenToEighteen THEN effectOnMood IS little;
+	RULE 25: IF addedSugarConsumption IS tooMuch AND gender IS female AND age IS fourToSix THEN effectOnMood IS tooMuch;
+	RULE 26: IF addedSugarConsumption IS tooMuch AND gender IS female AND age IS sevenToTen THEN effectOnMood IS tooMuch;
+	RULE 27: IF addedSugarConsumption IS tooMuch AND gender IS female AND age IS elevenToEighteen THEN effectOnMood IS much;
+	RULE 28: IF addedSugarConsumption IS tooMuch AND gender IS male AND age IS fourToSix THEN effectOnMood IS tooMuch;
+	RULE 29: IF addedSugarConsumption IS tooMuch AND gender IS male AND age IS sevenToTen THEN effectOnMood IS much;
+	RULE 30: IF addedSugarConsumption IS tooMuch AND gender IS male AND age IS elevenToEighteen THEN effectOnMood IS much;
+	RULE 31: IF addedSugarConsumption IS excessive AND gender IS female AND age IS fourToSix THEN effectOnMood IS tooMuch;
+	RULE 32: IF addedSugarConsumption IS excessive AND gender IS female AND age IS sevenToTen THEN effectOnMood IS tooMuch;
+	RULE 33: IF addedSugarConsumption IS excessive AND gender IS female AND age IS elevenToEighteen THEN effectOnMood IS tooMuch;
+	RULE 34: IF addedSugarConsumption IS excessive AND gender IS male AND age IS fourToSix THEN effectOnMood IS tooMuch;
+	RULE 35: IF addedSugarConsumption IS excessive AND gender IS male AND age IS sevenToTen THEN effectOnMood IS tooMuch;
+	RULE 36: IF addedSugarConsumption IS excessive AND gender IS male AND age IS elevenToEighteen THEN effectOnMood IS tooMuch;
+	
+END_RULEBLOCK
+
+
+END_FUNCTION_BLOCK
