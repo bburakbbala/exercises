@@ -1,0 +1,13 @@
+{ "Portfoy":[
+{ "_id": "6083d9954308183862cf3c4f", "Sembol": "AKBNK", "Maliyet": 3.15,"Adet": 200},
+{ "_id": "6083d9954308196362cf3c50", "Sembol": "AKSA",  "Maliyet": 16.25,"Adet": 120},
+{ "_id": "6083d9954308183462cf3c9d", "Sembol": "TATGD", "Maliyet": 8.5,"Adet": 500},
+{ "_id": "6083d1634308183462cf3c9d", "Sembol": "TUPRS", "Maliyet": 86.5,"Adet": 1100},
+{ "_id": "6083d99543abb16362cf3c", "Sembol": "DOHOL", "Maliyet": 2.6,"Adet": 2500},
+{ "_id": "6083d99543abb16362cf3c", "Sembol": "ISCTR", "Maliyet": 34.94,"Adet": 400},
+{ "_id": "6083d99543abb16362cf3c", "Sembol": "KARTN", "Maliyet": 63.1,"Adet": 105},
+{ "_id": "6083d99543abb16362cf3c", "Sembol": "PETKM", "Maliyet": 14.17,"Adet": 45},
+{ "_id": "6083d99543abb16362cf3c", "Sembol": "PGSUS", "Maliyet": 48.9,"Adet": 304},
+{ "_id": "6083d99543ab796362cf3c", "Sembol": "SKBNK",  "Maliyet": 17.6,"Adet": 200},
+{ "_id": "6083d99543ab796362cf3c", "Sembol": "SOKM",  "Maliyet": 99.9,"Adet": 121}
+]}

@@ -1,0 +1,19 @@
+{ "Emirler":[
+{ "_id": "6083d99c82183862cf3c4f", "Sembol": "AKBNK", "Islem": "SATIS","Adet": 200},
+{ "_id": "6083d99543ab796362cf3c", "Sembol": "AKSA",  "Islem": "SATIS","Adet": 120},
+{ "_id": "6083d99543abb16362cf3c", "Sembol": "TATGD", "Islem": "ALIS","Adet": 250},
+{ "_id": "6083d9954308183462cf3c67", "Sembol": "asfsaf", "Islem": "ALIS", "Adet": 1249},
+{ "_id": "6083d9954308183462cf3c68", "Sembol": "EGGUB", "Islem": "ALIS", "Adet": 221},
+{ "_id": "6083d9954308183462cf3c61", "Sembol": "asfsaf", "Islem": "SATIS", "Adet": 14},
+{ "_id": "6083d9954308183462cf3c62", "Sembol": "CIMSA", "Islem": "ALIS", "Adet": 250},
+{ "_id": "6083d9954308183462cf3c5b", "Sembol": "BIMAS", "Islem": "SATIS", "Adet": 65},
+{ "_id": "6083d9954308183462cf3c5c", "Sembol": "wqeqw", "Islem": "ALIS", "Adet": 22},
+{ "_id": "6083d9954308183462cf3c7b", "Sembol": "ISCTR", "Islem": "ALIS", "Adet": 4},
+{ "_id": "6083d9954308183462cf3c7c", "Sembol": "ISFIN", "Islem": "SATIS", "Adet": 2},
+{ "_id": "6083d9954308183462cf3c7d", "Sembol": "ISGYO", "Islem": "ALIS", "Adet": 1},
+{ "_id": "6083d9954308183462cf3c94", "Sembol": "PETKM", "Islem": "SATIS", "Adet": 150},
+{ "_id": "6083d9954308183462cf3c95", "Sembol": "PGSUS", "Islem": "SATIS", "Adet": 750},
+{ "_id": "6083d9954308183462cf3c96", "Sembol": "qwfwq", "Islem": "ALIS", "Adet": 30},
+{ "_id": "6083d1634308183462cf3c9d", "Sembol": "TUPRS", "Islem": "SATIS","Adet": 1100},
+{ "_id": "6083d9954308183462cf3c99", "Sembol": "SELEC", "Islem": "SATIS", "Adet": 150}
+]}
