@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XTEA Block Cipher App</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 style="font-size:3em;">XTEA Block Cipher</h1>
+      
+      <div class="row">
+        <div>
+          <button id="generate-key-button" type="button">Generate Key</button>
+        </div>
+      </div>
+      <p id="key"></p>
+      <br><br>
+      <div class="row">
+        <div>
+          <input id="key-input1" placeholder="Key Input" />
+          <input id="plaintext-input" placeholder="Plain text" />
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <button id="encrypt-button" type="button">Encrypt</button>
+      </div>
+      <p id="cipher"></p>
+
+      <br><br>
+      <div class="row">
+        <div>
+          <input id="key-input2" placeholder="Key Input" />
+          <input id="ciphertext-input" placeholder="Cipher text" />
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <button id="decrypt-button" type="button">Decrypt</button>
+      </div>
+      <p id="plaintext"></p>
+    </div>
+  </body>
+</html>
