@@ -1,0 +1,28 @@
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Debug\OkcuOyunu.exe.config
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Debug\OkcuOyunu.exe
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Debug\OkcuOyunu.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csprojAssemblyReference.cache
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.Properties.Resources.resources
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csproj.GenerateResource.cache
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\OkcuOyunu.exe
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\OkcuOyunu.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.OyunForm.resources
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Debug\Proje.Library.dll
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Debug\Proje.Library.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csproj.CopyComplete
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.AyarForm.resources
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\bin\Debug\OkcuOyunu.exe.config
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\bin\Debug\OkcuOyunu.exe
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\bin\Debug\OkcuOyunu.pdb
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\bin\Debug\Proje.Library.dll
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\bin\Debug\Proje.Library.pdb
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csprojAssemblyReference.cache
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.AyarForm.resources
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.OyunForm.resources
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.Properties.Resources.resources
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csproj.GenerateResource.cache
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\Proje.Desktop.csproj.CopyComplete
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\OkcuOyunu.exe
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Desktop\obj\Debug\OkcuOyunu.pdb

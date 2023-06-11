@@ -1,0 +1,6 @@
+C:\Users\Burak\source\repos\Proje\Proje.Library\bin\Release\Proje.Library.dll
+C:\Users\Burak\source\repos\Proje\Proje.Library\bin\Release\Proje.Library.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Release\Proje.Library.csprojAssemblyReference.cache
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Release\Proje.Library.csproj.CoreCompileInputs.cache
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Release\Proje.Library.dll
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Release\Proje.Library.pdb

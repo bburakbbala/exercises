@@ -1,0 +1,12 @@
+C:\Users\Burak\source\repos\Proje\Proje.Library\bin\Debug\Proje.Library.dll
+C:\Users\Burak\source\repos\Proje\Proje.Library\bin\Debug\Proje.Library.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Debug\Proje.Library.csproj.CoreCompileInputs.cache
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Debug\Proje.Library.dll
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Debug\Proje.Library.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Library\obj\Debug\Proje.Library.csprojAssemblyReference.cache
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Library\bin\Debug\Proje.Library.dll
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Library\bin\Debug\Proje.Library.pdb
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Library\obj\Debug\Proje.Library.csprojAssemblyReference.cache
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Library\obj\Debug\Proje.Library.csproj.CoreCompileInputs.cache
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Library\obj\Debug\Proje.Library.dll
+C:\Users\Burak\source\repos\New folder (7)\Proje\Proje.Library\obj\Debug\Proje.Library.pdb

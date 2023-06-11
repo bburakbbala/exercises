@@ -1,0 +1,14 @@
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Release\OkcuOyunu.exe.config
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Release\OkcuOyunu.exe
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Release\OkcuOyunu.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Release\Proje.Library.dll
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\bin\Release\Proje.Library.pdb
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.csprojAssemblyReference.cache
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.AyarForm.resources
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.OyunForm.resources
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.Properties.Resources.resources
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.csproj.GenerateResource.cache
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\Proje.Desktop.csproj.CopyComplete
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\OkcuOyunu.exe
+C:\Users\Burak\source\repos\Proje\Proje.Desktop\obj\Release\OkcuOyunu.pdb
