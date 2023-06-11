@@ -1,0 +1,134 @@
+﻿@model Clinic.Models.ViewModels.HospitalVM
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Add New Hospital";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="row p-3 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (!Model.Hospital.Id.ToString().Equals("00000000-0000-0000-0000-000000000000"))
+        {
+            // edit
+            title = "Edit Hospital";
+            <input type="hidden" asp-for="Hospital.Id" />
+        }
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@title</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    Hospital Name
+                </div>
+                <div class="col-8">
+                    <input asp-for="Hospital.Name" class="form-control" />
+                    <span asp-validation-for="Hospital.Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    Hospital Description
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Hospital.Description" id="hospitalDescription" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    Address Detail
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Hospital.AddressDetail" class="form-control"></textarea>
+                    <span asp-validation-for="Hospital.AddressDetail" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    Country or Region
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Hospital.CountryOrRegionId, Model.CountryOrRegionList,
+                   "Select Country or Region", new { @class = "form-control" })
+                </div>
+                <span asp-validation-for="Hospital.CountryOrRegionId" class="text-danger"></span>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    City
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Hospital.CityId, Model.CityList,
+                   "Select City", new { @class = "form-control" })
+                </div>
+                <span asp-validation-for="Hospital.CityId" class="text-danger"></span>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    Province
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Hospital.ProvinceId, Model.ProvinceList,
+                   "Select Province", new { @class = "form-control" })
+                </div>
+                <span asp-validation-for="Hospital.ProvinceId" class="text-danger"></span>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    <label asp-for="Hospital.ImageUrl">Image</label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="files" id="uploadBox" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    @if (!Model.Hospital.Id.ToString().Equals("00000000-0000-0000-0000-000000000000"))
+                    {
+                        <partial name="_EditAndBackToListButtonGuidModal" model="Model.Hospital.Id" />
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col pt-2">
+                                <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
+                            </div>
+                            <div class="col pt-2">
+                                <button type="submit" onclick="return validateInput()" class="btn btn-primary form-control">Create</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        @if (!Model.Hospital.Id.ToString().Equals("00000000-0000-0000-0000-000000000000"))  // show in update
+        {
+            <div class="col-3 pt-4">
+                <img src="@Model.Hospital.ImageUrl" style="border-radius:5px; border:1px solid #bbb9b9" />
+            </div>
+        }
+    </div>
+</form>
+
+@section Scripts {
+
+<partial name="_ValidationScriptsPartial" /> @* for client side validation*@
+<script src="https://cdn.tiny.cloud/1/8jovjl9huqjgdzb553qbz9lthljwav6udd2ol01upb6n1ern/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+    tinymce.init({
+        selector: '#hospitalDescription',
+        plugins: 'lists',
+        menubar: 'file edit format'
+    });
+
+    function validateInput() {
+        if (document.getElementById("uploadBox").value == "") {
+            swal("Error", "Please select an image", "error")
+            return false;
+        }
+        return true;
+    }
+
+</script>
+}

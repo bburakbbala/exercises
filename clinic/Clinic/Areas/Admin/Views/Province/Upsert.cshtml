@@ -1,0 +1,77 @@
+﻿@model Clinic.Models.ViewModels.ProvinceVM
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Add New Province";
+}
+
+<form method="post">
+    <div class="row p-3 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model.Province.Id != 0)
+        {
+            // edit
+            title = "Edit Province";
+        }
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@title</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-4 text-start">
+                    <label asp-for="Province.Name"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Province.Name" class="form-control" />
+                    <span asp-validation-for="Province.Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    <label asp-for="Province.ZipCode">Zip Code</label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Province.ZipCode" class="form-control" />
+                    <span asp-validation-for="Province.ZipCode" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    Country or Region
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Province.CountryOrRegionId, Model.CountryOrRegionList,
+                      "Select Country or Region", new { @class = "form-control" })
+                    <span asp-validation-for="Province.CountryOrRegionId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <div class="col-4 text-start">
+                    City
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Province.CityId, Model.CityList,
+                      "Select City", new { @class = "form-control" })
+                    <span asp-validation-for="Province.CityId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    @if (Model.Province.Id != 0)
+                    {
+                        <partial name="_EditAndBackToListButtonIntModal" model="Model.Province.Id" />
+                    }
+                    else
+                    {
+                        <partial name="_CreateAndBackToListButton" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" /> @* for client side validation*@
+
+}

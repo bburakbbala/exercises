@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Clinic.Models.Hospital>
+@{ ViewData["Title"] = "Home Page"; }
+
+<div class="row pb-3 backgroundWhite">
+
+    @foreach (var hospital in Model)
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="row p-2">
+                <div class="col-12  p-1" style="border:1px solid #008cba; border-radius: 5px;">
+                    <div class="card" style="border:0px;">
+                        <img src="@hospital.ImageUrl" class="card-img-top rounded" />
+                        <div class="p-2 text-center">
+                            <p class="card-title h5"><b style="color:#2c3e50">@hospital.Name</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <a asp-action="Details" class="btn btn-primary form-control" asp-route-id="@hospital.Id">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
